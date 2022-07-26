@@ -36,8 +36,7 @@ jobs:
         uses: ArtemSBulgakov/buildozer-action@v1
         id: buildozer
         with:
-          command: sudo chmod -R 777 /tmp
-          buildozer android debug
+          command: buildozer android debug
           buildozer_version: master
 
       - name: Upload artifacts
